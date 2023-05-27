@@ -1,0 +1,18 @@
+<!-- String Interpolation Binding -->
+<h1>{{ title }}</h1>
+
+product Name<input type="text" [class]="productClass" (focus)="createCandyBorder()" (blur)="removeCandyBorder()">
+<!--                        Property binding        Attribute binding    -->
+price <input type="number" [placeholder]="pricePH" [attr.abc]="abcText" (click)="printHi()" [class]="priceClass" [attr.willsmith]="actor">
+
+<br><br><br>
+
+Age: <input type="number" [(ngModel)]="address">
+
+<br><br>
+{{ address }}
+<!-- [()]  Banana in a box -->
+
+<br><br><br>
+
+<button (click)="alertSubmit()">Submit</button>
